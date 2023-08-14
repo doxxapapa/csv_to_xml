@@ -9,7 +9,10 @@ sys.path.append(os.path.join(script_dir, "core"))
 
 from core.ui import ui
 def main():
-    ui()
+    try:
+        ui()
+    except Exception:
+        pass
 
 if __name__ == "__main__":
     main()
