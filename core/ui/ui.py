@@ -60,7 +60,6 @@ def process_files():
                 subprocess.check_call(["open", folder_path])
             else:
                 subprocess.check_call(["xdg-open", folder_path])
-            os.startfile(folder_path)
             progress_bar['value'] = 100
             root.update_idletasks()  # Force GUI update
             progress_bar.grid_remove()  # Remove the progress bar from the layout
